@@ -1,0 +1,147 @@
+/*.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e293b;
+    padding: 15px 30px;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo-container {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .logo {
+    height: 40px;
+    margin-right: 10px;
+  }
+  
+  .logo-container h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1rem;
+    position: relative;
+    padding: 5px 0;
+  }
+  
+  .nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background: #38bdf8;
+    left: 0;
+    bottom: 0;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .nav-links a:hover::after {
+    width: 100%;
+  }
+  
+  .nav-links a:hover {
+    color: #38bdf8;
+  }
+  */
+
+  /*making improvements*/
+ .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .navbar-left {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo-icon {
+    font-size: 24px;
+    color: #ff914d;
+    margin-right: 8px;
+  }
+  
+  .brand-name {
+    font-size: 20px;
+    font-weight: 600;
+    color: #243354;
+  }
+  
+  .navbar-search {
+    display: flex;
+    align-items: center;
+    background-color: #f1f3f5;
+    padding: 4px 8px;
+    border-radius: 8px;
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+  }
+  
+  .navbar-search input {
+    border: none;
+    background: none;
+    margin-left: 10px;
+    flex: 1;
+    font-size: 14px;
+    outline: none;
+  }
+  
+  .navbar-search kbd {
+    margin-left: 10px;
+    background: #e0e0e0;
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-size: 12px;
+  }
+  
+  .navbar-actions {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  
+  .add-btn {
+    background-color: #ffa84d;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: 500;
+  }
+  
+ 
+  
+  .icon {
+    font-size: 16px;
+    color: #555;
+    cursor: pointer;
+  }
+  
+  .user-avatar {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+  }
+  
+
+
+  

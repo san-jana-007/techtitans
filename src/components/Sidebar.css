@@ -1,0 +1,140 @@
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-container {
+  width: 200px;
+  border-right: 1px solid #e0e0e0;
+  background-color: #F2EFE7;
+  position: fixed;
+  height: 100vh;
+  z-index: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+/* Add custom scrollbar styling */
+.sidebar-container::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sidebar-container::-webkit-scrollbar-track {
+  background: #F2EFE7;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb {
+  background: #9ACBD0;
+  border-radius: 3px;
+}
+
+.sidebar-container::-webkit-scrollbar-thumb:hover {
+  background: #48A6A7;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 200px;
+  overflow: auto;
+}
+
+.content-area {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 64px);
+}
+
+/* Sidebar specific styles */
+.sidebar {
+  padding: 20px 0;
+  min-height: 100%;
+  font-family: 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.sidebar-section {
+  margin-bottom: 30px;
+}
+
+.sidebar-section h3 {
+  color: #2973B2;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.sidebar-link {
+  display: block;
+  padding: 12px 20px;
+  color: #48A6A7;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.3s ease;
+  position: relative;
+  font-weight: 500;
+}
+
+.sidebar-link:hover {
+  background: linear-gradient(to right, #9ACBD0 0%, #48A6A7 100%);
+  color: #F2EFE7;
+  padding-left: 25px;
+}
+
+.sidebar-link:hover::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #2973B2;
+}
+
+.sidebar-link.active {
+  background-color: #9ACBD0;
+  color: #2973B2;
+  font-weight: 600;
+}
+
+.sidebar-link.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 4px;
+  background-color: #2973B2;
+}
+
+.sidebar-link.active {
+  background-color: #e8f5e9;
+  color: #4CAF50;
+}
+
+/* App container styles */
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar-container {
+  width: 200px;
+  border-right: 1px solid #e0e0e0;
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 1;
+}
+
+.main-content {
+  flex: 1;
+  margin-left: 200px;
+}
+
+.content-area {
+  padding: 20px;
+  background-color: #f5f5f5;
+  min-height: calc(100vh - 64px);
+}
