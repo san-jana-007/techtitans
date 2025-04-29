@@ -1,0 +1,52 @@
+.sales-container {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .sales-header {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .sales-tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .sales-tab {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #eee;
+    border-radius: 5px;
+    user-select: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sales-tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .sales-summary {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  
+  .sales-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .sales-table th,
+  .sales-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .sales-table th {
+    background-color: #f2f2f2;
+  }
+  

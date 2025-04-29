@@ -1,5 +1,4 @@
-// src/pages/Signup.js
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './signup.css';
 
